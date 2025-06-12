@@ -23,9 +23,7 @@ jobs:
           cache: 'maven'
 
       - name: Get the version
-        run: |
-          git checkout main
-          echo "RELEASE_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout | grep -v '\[.*' | awk -F- '{print ""$1""}')" >> "$GITHUB_ENV"
+        run: echo "RELEASE_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout | grep -v '\[.*' | awk -F- '{print ""$1""}')" >> "$GITHUB_ENV"
 
       - name: Maven Gitflow Release
         run: |
