@@ -41,9 +41,8 @@
             <productionBranch>main</productionBranch>
             <developmentBranch>develop</developmentBranch>
             <featureBranchPrefix>feature/</featureBranchPrefix>
-            <releaseBranchPrefix>release/</releaseBranchPrefix>
             <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
-            <versionTagPrefix>v</versionTagPrefix>
+            <versionTagPrefix/>
             <origin>origin</origin>
           </gitFlowConfig>
         </configuration>
