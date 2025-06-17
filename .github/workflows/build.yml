@@ -1,0 +1,12 @@
+---
+name: Java CI with Maven
+
+on:
+  push:
+    branches: [master, main, develop]
+  pull_request:
+    branches: [master, main, develop]
+
+jobs:
+  build:
+    uses: mattb-dev/devops/.github/workflows/build.maven.yml@v1
