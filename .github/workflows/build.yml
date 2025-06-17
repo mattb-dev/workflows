@@ -9,4 +9,4 @@ on:
 
 jobs:
   build:
-    uses: mattb-dev/devops/.github/workflows/build.maven.yml@v1
+    uses: mattb-dev/devops/.github/workflows/build.maven.yml@v1.0
