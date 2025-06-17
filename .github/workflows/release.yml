@@ -53,6 +53,7 @@ jobs:
 
       - name: Next dev version
         run: |
+          git checkout develop
           mvn -V -B -e versions:set -DnewVersion=${{ env.NEXT_DEV_VERSION }} -DprocessAllModules -DgenerateBackupPoms=false
           git commit -am "set next dev version"
           git push origin develop
